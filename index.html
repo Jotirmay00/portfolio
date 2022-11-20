@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9d7df0900c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Jotirmay.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1> Hi , I am <br>Jotirmay Manik </h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user (1).jpeg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A highly organized and hard-working individual eager to work 
+                        with organizations that help to me improve and grow,
+                        eager to learn new technology according to requirement
+                        and trend for better outcome.
+
+                    </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('languages')">Languages,Tools,Framework</p>
+                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Software Development</span><br>Designing Developing Software</li>
+                        <li><span>Web Development</span><br>Developing and Designing Web interfaces</li>
+                        <li><span>Application Development</span><br>Developing and Designing Web applications</li>
+                        <li><span>Problem Solving</span><br>Solving DSA Problems using Java programming language</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents " id="languages">
+                    <ul>
+                        <li><span>Java</span><br>Proficiency-------Good</li>
+                        <li><span>Javascript</span><br>Proficiency-------Good</li>
+                        <li><span>Html,Css</span><br>Proficiency-------VeryGood</li>
+                        <li><span>React,Node</span><br>Proficiency-------Good</li>
+                        <li><span>Git</span><br>Proficiency-------VeryGood</li>
+                        <li><span>Python</span><br>Proficiency-------Decent</li>
+                        <li><span>Php</span><br>Proficiency-------Decent</li>
+                        <li><span>MySQL</span><br>Proficiency-------Good</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>Bachelors in Computer Science </li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>
+                    Web Design
+                </h2>
+                <p>Website Designing and Development using the most trendy techstack
+                    for dynamic and responsive websites. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>
+                    Software Development
+                </h2>
+                <p>Software Designing and Development using most effictive technology. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>
+                    App Development
+                </h2>
+                <p>Web Application with most interactive interfaces and functionality
+                    developed according to the users requirement.
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" >
+                <div class="layer">
+                    <h3>Chat Application</h3>
+                    <p>A Realtime Chat application using the most trendy techstack(Mern stack) 
+                        and Socket IO.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                <h3>Food Ordering System</h3>
+                <p>A food ordering system created with basic html and php for a personal client.</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                <h3>Crypto Tracker</h3>
+                <p>A Realtime Crypto tracking application using React js. 
+                    </p>
+                <a href="https://cryptotracker-alpha.vercel.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Jotirmay00" class="btn">See More</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> jotirmaymanik@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 8329900358</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Jotirmay00"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jotirmay-manik-92a59b205"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Newresume.docx" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <p>Copyright @ Jotirmay</p>
+    </div>
+</div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwR4whywcMaw8GcLyjLrwh87qQp2SsYCiw_o0mP5MkL0Ma_4NhhRXJabeFLutKvrJUY/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML="Message Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
